@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            My First Subwindow
+        </title>
+    </head>
+
+    <body>
+        <center>
+        <h1>My First Subwindow</h1>
+
+        Enter web address:
+        <input type="text" id="address">
+        <input type="button" value="GO" onclick="startwebsite()">
+
+        <br><br>
+
+        <iframe id="win" src="" style=" height: 70vh; width: 70vw;">
+            Iframes is not supported.
+        </iframe>
+        </center>
+        
+    </body>
+
+    <script>
+        function startwebsite(){
+            document.getElementById('win').setAttribute('src', document.getElementById('address').value)
+        }
+    </script>
+
+</html>
